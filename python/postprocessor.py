@@ -14,7 +14,7 @@ def download_mp3(url):
         }],
     }
 
-    with yt_dlp.YoutubeDL(yt_dlp) as ydl:
+    with yt_dlp.YoutubeDL(ydlp_opts) as ydl:
         ydl.download([url])
 
 # eksekutor file
